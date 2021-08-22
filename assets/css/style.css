@@ -13,12 +13,16 @@ Bold: 700
 -- Line heights
 Default: 1
 Small: 1.05
+Medium: 1.2
 Paragraph Default: 1.6
 
+-- Letter spacing
+-0.5px
+0.75px
 
 ------ COLORS ------
 Primary: #e67e22
-Tints: #fdf2e9
+Tints: #fdf2e9, #fae5d3
 Shades: #cf711f
 Accents: 
 Greys: #555, #333
@@ -65,7 +69,12 @@ body {
 
 .grid {
     display: grid;
-    gap: 9.6rem;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+
+.grid--center-v {
+    align-items: center;
 }
 
 .grid--2-cols {
@@ -80,6 +89,42 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+/* HEADINGS - REUSABLE CODE */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
 
 /* SECTION-HEADER & NAVIGATION */
 .header {
@@ -146,15 +191,6 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 9.6rem;
     align-items: center;
-}
-
-.heading-primary {
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.05;
-    color: #333;
-    letter-spacing: -0.5px;
-    margin-bottom: 3.2rem;
 }
 
 .hero-description {
@@ -244,10 +280,59 @@ body {
 /* SECTION-HOW */
 .section-how {
     padding: 9.6rem 0;
-    background-color: orangered;
 }
 
-.section-how div {
-    padding: 100px;
-    font-size: 50px;
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform will shift the element 50% of its same width and own height */
+    transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+    width: 60%;
+    /*height: 60% */
+    /*60% of parent's width*/
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+
+.step-img-box::after {
+    width: 45%;
+    /*height: 45% */
+    /*45% of parent's width*/
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+.step-img {
+    width: 35%;
+}
+
+.step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
