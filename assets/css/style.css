@@ -31,6 +31,7 @@ Greys: #555, #333
 
 ------ BORDER RADIUS ------
 Default: 9px
+Meal Card: 11px
 
 ------ WHITE SPACE ------
 -- Spacing system (px)
@@ -58,7 +59,7 @@ body {
   color: #555;
 }
 
-/* GRID COLUMNS - REUSABLE CODE*/
+/* REUSABLE CODE: GRID COLUMNS*/
 .container {
   padding: 0 3.2rem;
   max-width: 120rem;
@@ -87,7 +88,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* HEADINGS - REUSABLE CODE */
+/* REUSABLE CODE: HEADINGS */
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -124,7 +125,7 @@ body {
   letter-spacing: 0.75px;
 }
 
-/* SECTION-HEADER & NAVIGATION */
+/* SECTION: HEADER & NAVIGATION */
 .header {
   display: flex;
   justify-content: space-between;
@@ -174,7 +175,7 @@ body {
   background-color: #cf711f;
 }
 
-/* SECTION-HERO */
+/* SECTION: HERO */
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -273,7 +274,7 @@ body {
   font-weight: 700;
 }
 
-/* SECTION-FEATURED IN */
+/* SECTION: FEATURED IN */
 .section-featured {
     padding: 4.8rem 0 3.2rem 0;
 }
@@ -299,7 +300,7 @@ body {
     opacity: 50%;
 }
 
-/* SECTION-HOW IT WORKS */
+/* SECTION: HOW IT WORKS */
 .section-how {
   padding: 9.6rem 0;
 }
@@ -357,4 +358,81 @@ body {
 .step-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* SECTION: MEALS */
+.section-meals {
+    padding: 9.6rem 0;
+}
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.meal-img {
+    width: 100%;
+}
+
+.meal-content {
+    padding: 3.2rem 4.8rem;
+}
+
+.meal-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+}
+
+.tag--vegetarian {
+    background-color: #51cf66;
+}
+
+.tag--vegan {
+    background-color: #94d82d
+}
+
+.tag--paleo {
+    background-color: #ffd43b;
+}
+
+.meal-name {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-attribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.meal-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #e67e22;
+}
+
+strong {
+    font-weight: 500;
 }
