@@ -60,35 +60,35 @@ body {
 }
 
 strong {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* REUSABLE CODE: HELPER CLASSES */
 .margin-bottom-md {
-    margin-bottom: 4.8rem !important; 
+  margin-bottom: 4.8rem !important;
 }
 
 .margin-right-sm {
-    margin-right: 1.6rem !important;
+  margin-right: 1.6rem !important;
 }
 
 .link:link,
 .link:visited {
-    text-decoration: none;
-    color:#e67e22;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 0.2rem;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
 }
 
 .link:hover,
 .link:active {
-    color: #cf711f;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s;
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 /* REUSABLE CODE: GRID COLUMNS*/
@@ -304,28 +304,28 @@ strong {
 
 /* SECTION: FEATURED IN */
 .section-featured {
-    padding: 4.8rem 0 3.2rem 0;
+  padding: 4.8rem 0 3.2rem 0;
 }
 
 .heading-featured-in {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 2.4rem;
-    color: #888;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
 }
 
 .logos {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logos img {
-    height: 3.2rem;
-    filter: brightness(0);
-    opacity: 50%;
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
 }
 
 /* SECTION: HOW IT WORKS */
@@ -390,104 +390,132 @@ strong {
 
 /* SECTION: MEALS */
 .section-meals {
-    padding: 9.6rem 0;
+  padding: 9.6rem 0;
 }
 
 .meal {
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-    border-radius: 11px;
-    overflow: hidden;
-    transition: all 0.4s;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
 }
 
 .meal:hover {
-    transform: translateY(-1.2rem);
-    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-img {
-    width: 100%;
+  width: 100%;
 }
 
 .meal-content {
-    padding: 3.2rem 4.8rem;
+  padding: 3.2rem 4.8rem;
 }
 
 .meal-tags {
-    margin-bottom: 1.2rem;
-    display: flex;
-    gap: 0.4rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
 }
 
 .tag {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #333;
-    border-radius: 100px;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
 }
 
 .tag--vegetarian {
-    background-color: #51cf66;
+  background-color: #51cf66;
 }
 
 .tag--vegan {
-    background-color: #94d82d
+  background-color: #94d82d;
 }
 
 .tag--paleo {
-    background-color: #ffd43b;
+  background-color: #ffd43b;
 }
 
 .meal-name {
-    font-size: 2.4rem;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 3.2rem;
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
 }
 
 .meal-attributes {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .meal-attribute {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .meal-icon {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
 
 .list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .list-item {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .list-icon {
-    width: 3rem;
-    height: 3rem;
-    color: #e67e22;
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
 
 .all-recipes {
-    text-align: center;
-    font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* SECTION: TESTIMONIALS */
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.testimonial-img {
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #777;
 }
