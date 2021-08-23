@@ -102,6 +102,12 @@ strong {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+
+  margin-bottom: 9.6rem;
+}
+
+.grid:last-child {
+    margin-bottom: 0;
 }
 
 .grid--center-v {
@@ -629,4 +635,33 @@ strong {
 .plan-signup {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.plan-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* SECTION: FEATURES */
+.feature-icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
