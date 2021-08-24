@@ -127,6 +127,11 @@ strong {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid--5-cols {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+
 /* REUSABLE CODE: HEADINGS */
 .heading-primary,
 .heading-secondary,
@@ -674,7 +679,7 @@ strong {
 
 /* SECTION: CTA */
 .section-cta {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -747,5 +752,77 @@ strong {
 
 .cta-form button:hover {
     background-color: #fff;
+    color: #555;
+}
+
+/* FOOTER */
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.social-links {
+    list-style: none;
+    display:flex;
+    gap: 2.4rem;
+}
+
+.social-links ion-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-top: 3.6rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+
+    margin-top: auto;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
     color: #555;
 }
