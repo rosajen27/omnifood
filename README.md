@@ -1,1 +1,2 @@
-# omnifood
+# ∞ Omnifood
+Coming soon!
