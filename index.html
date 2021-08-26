@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/queries.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
     <title>Omnifood</title>
 </head>
 
@@ -26,8 +30,12 @@
             </ul>
         </nav>
         <!-- Mobile Navigation -->
-        <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu"></ion-icon></button>
-        <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="close"></ion-icon></button>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        </button>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+        </button>
     </header>
 
     <!-- Main Section-->
@@ -458,11 +466,18 @@
                 <a href="#"><img class="logo" alt="Omnifood logo" src="assets/img/omnifood-logo.png"></a>
                 <!-- Social Links -->
                 <ul class="social-links">
-                    <li><a href="#" class="footer-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="#" class="footer-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#" class="footer-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#" class="footer-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="#" class="footer-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#" class="footer-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
                 </ul>
-                <p class="copyright">Copyright &copy; 2021 by Omnifood, Inc. All rights reserved.</p>
+                <p class="copyright">Copyright &copy; <span class="year">2021</span> by Omnifood, Inc. All rights
+                    reserved.</p>
             </div>
             <div class="address-col">
                 <p class="footer-heading">Contact us</p>
@@ -504,7 +519,7 @@
             </nav>
         </div>
     </footer>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
