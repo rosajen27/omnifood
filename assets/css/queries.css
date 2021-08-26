@@ -1,7 +1,9 @@
 /* rem and em do NOT depend on HTML font size in media queries 
 Instead, 1rem = 1em = 16px */
 
-/* BELOW 1344px (Smaller Laptops) */
+/*****************************************/ 
+/* Smaller Laptops: Below 1344px */
+/*****************************************/ 
 /*  1350 / 16 = 84  */
 @media (max-width: 84em) {
   .hero {
@@ -17,7 +19,9 @@ Instead, 1rem = 1em = 16px */
   }
 }
 
-/* BELOW 1200px (Landscape Tablets) */
+/*****************************************/ 
+/* Landscape Tablets: Below 1200px */
+/*****************************************/ 
 /*  1200 / 16 = 75  */
 @media (max-width: 75em) {
   html {
@@ -55,7 +59,9 @@ Instead, 1rem = 1em = 16px */
   }
 }
 
-/* BELOW 944px (Tablets) */
+/*****************************************/ 
+/* Tablets: Below 944px*/
+/*****************************************/ 
 /*   944 / 16 = 59  */
 @media (max-width: 59em) {
   html {
@@ -111,7 +117,9 @@ Instead, 1rem = 1em = 16px */
     grid-template-columns: 1fr;
   }
 
+  /*****************************************/ 
   /* MOBILE NAVIGATION */
+  /*****************************************/ 
   .btn-mobile-nav {
     display: block;
   }
@@ -172,4 +180,46 @@ Instead, 1rem = 1em = 16px */
   .main-nav-link:visited {
     font-size: 3rem;
   }
+}
+
+/*****************************************/ 
+/* Smaller Tablets: Below 704px */
+/*****************************************/ 
+
+/*   704 / 16 = 44  */
+@media (max-width: 44em) {
+    
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .diets {
+        /* center & span across entire grid */
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+
+    .grid--footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
 }
