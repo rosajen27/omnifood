@@ -4,7 +4,8 @@
 const yearEl = document.querySelector(".year");
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-const allLinks = document.querySelectorAll('a:link');
+const sectionHeroEl = document.querySelector(".section-hero");
+const allLinks = document.querySelectorAll("a:link");
 
 // Dynamically update copyright year
 const currentYear = new Date().getFullYear();
@@ -14,6 +15,26 @@ yearEl.textContent = currentYear;
 btnNavEl.addEventListener("click", function () {
     headerEl.classList.toggle("nav-open");
 })
+
+// Sticky Navigation
+const obs = new IntersectionObserver(function(entries) {
+  const ent = entries[0];
+
+  if(ent.isIntersecting === false) {
+    document.body.classList.add("sticky");
+  }
+
+  if(ent.isIntersecting === true) {
+    document.body.classList.remove("sticky");
+  }
+
+}, {
+  // In the viewport
+  root: null,
+  threshold: 0,
+  rootMargin: "-80px"
+});
+obs.observe(sectionHeroEl)
 
 // Smooth Scroll
 allLinks.forEach(function (link) {
